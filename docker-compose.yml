@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  # 1. The Vector Database
+  db:
+    image: pgvector/pgvector:pg16  # Postgres with vector extension pre-installed
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=vectordb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # 2. The Cache & Memory Store
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:

@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langchain
+langchain-ollama
+langchain-postgres
+langchain-community
+psycopg[binary]
+redis
+pypdf
+python-dotenv
