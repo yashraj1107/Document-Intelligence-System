@@ -4,6 +4,7 @@ A production-ready RAG (Retrieval-Augmented Generation) powered Q&A system that 
 
 ## Features
 
+
 - **Semantic Document Search**: Query across 100+ PDFs using natural language with context-aware responses
 - **Advanced RAG Pipeline**: Built with LangChain for robust document processing and retrieval
 - **High Performance**: Sub-2 second query response times with optimized vector similarity search
@@ -212,4 +213,5 @@ Contributions are welcome! Please follow these steps:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
